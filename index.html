@@ -1,77 +1,343 @@
 <!DOCTYPE html>
-
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="style.css">
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LANDING PAGE</title>
+    <title>Lan Access Control</title>
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
 </head>
+
+<style>
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: century-gothic;
+    margin: 0px;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 15px;
+    margin-top: 0px;
+    height: 50px;
+    background-color: white;
+    max-width: 100%;
+}
+
+.logo {
+    width: 200px;
+    height: 50px;
+    margin: 0px;
+}
+
+.headerlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+    
+}
+
+.container {
+    background-image: url(./Images/fondo\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 350px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-bottom-style: solid;
+    width: 100%;
+}
+
+.container2 {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 25px;
+    gap: 50px;
+}
+
+.foto1{
+    width: 420px;
+    height: 300px;
+    border-style: solid;
+    border-color: black;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.texto1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 700px;
+    margin-right: 450px;
+    margin-bottom: 100px;
+}
+
+.container3 {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 0,5px;
+    background-image: url("Images/IMG_5354 copy.JPG");
+    background-repeat: no-repeat;
+    background-size: 400%;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 50px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
+}
+
+.foto2 {
+    width: 350px;
+    height: 185px;
+    opacity: 90%;
+    border-radius: 2%;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.foto2:hover {
+    opacity: 50%;
+}
+
+.mov1{
+    display: flex;
+    
+}
+
+.mov2{
+    display: flex;
+    
+}
+
+.mov3{
+    display: flex;
+}
+
+.clavos1,
+.pinturas1,
+.sacos1 {
+    display: flex;
+    border-width: 0.5px;
+    justify-content: space-between;
+    gap: 50px;
+    border-bottom-style: solid;
+    padding-bottom: 50px;
+    border-color: white;
+}
+
+.sacos1 {
+    border-bottom-style: none;
+}
+
+.cuadro1 {
+    border-width: 1px;
+    width: 700px;
+    font-size: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: 30px;
+}
+
+.logoh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.en {
+    width: 20px;
+    height: 15px;
+}
+
+.lang {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.presencia {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matrix {
+    width: 550px;
+    height: 300px;
+}
+
+.logo2{
+    width: 35px;
+    height: 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.LAC {
+    font-weight: bold; font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    max-width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-left: 15px;
+}
+.headerlinks {
+    font-size: 12px;
+    display:flex;
+    gap: 10px;
+}
+.container {
+    height: 300px;
+}
+    
+.matrix {
+    width: 80%;
+    height: 40%;
+}
+.LAC {
+    font-size: 10px;
+}
+
+.text {
+ font-size: 10px;
+ width: 200px;
+}
+.footer {
+    display: flex;
+    gap: 15px;
+    justify-items: center;
+    margin-left: px;
+    font-size: 50%;
+}
+.cuadro1 {
+    font-size: 50%;
+    width: 100%;
+}
+.foto2 {
+    width: 100%;
+    height: 100%;
+}
+.clavos1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.pinturas1 {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+</style>
+
 <body>
+    
+    <main>
         <div class="header">
-            <div class="container1">
-                <div style="font-size: 20px; font-weight: bold;">
-                    Header Logo
-                </div>
-                <div class="headerlinks">
-                     <div>Header Link 1</div>
-                     <div>Header Link 2</div>
-                     <div>Header Link 3</div>
-                </div>
+            <div class="logoh">
+                <img class ="logo" src="./Images/logo.png"></img>
+                <div class="LAC"> Lan Access Control</div>
             </div>
+            
+            <div class="headerlinks">
+                 <div>globalbasquetrader@gmail.com</div>
+                 <div class="lang">
+                    <img class ="en" src="./Images/download.png">
+                    <div>EN</div>
+                 </div>
+            </div>
+        </div>    
+        <div class="container">
             <div class="container2">
-                <div class="text1">
-                    <div> This website is awesome </div>
-                    <div class="text4" style="font-size: 15px;">This website has some subtext that goes here under the main title. It’s a smaller font and the color is lower contrast</div> 
-                    <div class="botonazul2" style="font-size: 15px;">Sign up</div>                   
-                </div>
-                <img class="img3" src="./images/gray1.png " alt="Gray1">
-            </div>
-        </div>
-        <div class="content" style="color: black;">
-            <div class="text2" style="font-size: 36px; font-weight: extra-bold; color: #1F2937">Some random information.</div>
-            <div class="container33">
-                <div class="container3">
-                    <div class="cuadrado1"></div>
-                    <div class="texto5">This is some subtext under an illustration or image</div>
-                </div>
-                <div class="container3">
-                    <div class="cuadrado1"></div>
-                    <div class="texto5">This is some subtext under an illustration or image</div>
-                </div>
-                <div class="container3">
-                    <div class="cuadrado1"></div>
-                    <div class="texto5">This is some subtext under an illustration or image</div>
-                </div>
-                <div class="container3">
-                    <div class="cuadrado1"></div>
-                    <div class="texto5">This is some subtext under an illustration or image</div>
+                <div class="texto1">
+                    <div class="text">QUIÉNES SOMOS:</div>
+                    <div class="text">LAC se dedica al despacho de importación y exportación de mercancías dentro y fuera de la Unión Europea. Creamos la estrategia de venta online o física de tus productos o servicios. ¡Consúltanos!</div>
                 </div>
             </div>
         </div>
-        <div class="content2">
-            <div class="text3">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            </div>
-            <div style="font-size: 20px;"> - Thor, God of Thunder</div>
+        
+        <div class="presencia">
+            <img class="matrix" src="Images/matrix contin.png">
+
         </div>
 
-        <div class="content3">
-            <div class="rectazul" style="color:white;">
-                <div class="content33">
-                    <div style="font-size: 20px; font-weight: bold;">Call to action! It's time!</div>
-                    <div style="font-weight: lighter;">Sign up for our product by clicking that button right over there!</div>
+        <div class="container3">
+            <div class="contenedor">
+                <div class="clavos1">
+                    <img class="foto2 mov1" src="./Images/clavos3 2.jpeg">
+                    <div class="cuadro1"><span style="font-size: 25px;">Producción de clavos</span> <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div> 
                 </div>
-                <div class="signup">Sign up</div>
-            </div>            
+                <div class="pinturas1">
+                    <div class="cuadro1"> <span style="font-size: 25px;">Producción de Pinturas</span> <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    <img class="foto2 mov2" src="./Images/colorful-2468874_1280.jpeg">
+                </div>
+                <div class="sacos1">
+                    <img class="foto2 mov3" src="./Images/shopping.jpg">
+                    <div class="cuadro1"><span style="font-size: 25px;">Producción de Sacos de Poliprofileno</span> <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                </div>
+                
+            </div>
         </div>
+    </main>
 
+    <footer>
         <div class="footer">
-            <div>
-                Copyright © Xanti 2022
-            </div>
+            <img class="logo2" src="Images/logo.png">
+            <div>Copyright © LAC Lan Access Control 2022 - globalbasquetrader@gmail.com</div>
         </div>
+    </footer>
+
+    
+
 </body>
 </html>
